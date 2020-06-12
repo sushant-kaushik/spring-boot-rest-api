@@ -1,4 +1,4 @@
-name: FOD Scan
+name: FoD scan
 
 on: [push]
 
@@ -7,8 +7,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        -run: echo Hello world $FIRST_NAME $middle_name $Last_Name!
-        env:
-          FIRST_NAME: Sushant
-          middle_name: Kumar
-          Last_Name: Kaushik
+      - run: Hi from GitHub Action !!   
