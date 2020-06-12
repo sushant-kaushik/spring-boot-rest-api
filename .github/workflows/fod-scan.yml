@@ -1,5 +1,6 @@
 steps:
   - name: Hello world
+    on: [push]
     run: echo Hello world $FIRST_NAME $middle_name $Last_Name!
     env:
       FIRST_NAME: Sushant
