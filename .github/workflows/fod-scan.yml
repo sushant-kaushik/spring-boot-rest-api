@@ -19,8 +19,7 @@ jobs:
         env:
           FOD_BSI: ${{ secrets.FOD_BSI }}
           FOD_USER: ${{ secrets.FOD_USER }}
-          FOD_PWD: ${{ secrets.FOD_PWD }}
-        with:
+          FOD_PWD: ${{ secrets.FOD_PWD }}        
           base-url: https://sandbox.fortify.com
           tenant: Equifax	  
       - uses: actions/upload-artifact@v2
