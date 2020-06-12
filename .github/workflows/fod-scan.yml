@@ -13,7 +13,6 @@ jobs:
           java-version: 1.8
       - uses: fortify-actions/setup-scancentral-client@v1
       - uses: fortify-actions/setup-fod-uploader@v1
-      - run: npm install
       - run: scancentral package -bt mvn -o package.zip
       - run: java -jar $FOD_UPLOAD_JAR -bsi "$FOD_BSI" -z package.zip -uc "$FOD_USER" "$FOD_PWD" -ep 2 -pp 1
         env:
